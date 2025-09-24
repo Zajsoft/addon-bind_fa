@@ -1,0 +1,5 @@
+- name: Apply local changes
+  run: |
+    git checkout local-patch -- bind/config.yaml repository.yaml
+    git commit -m "Apply local modifications" || echo "No changes"
+    git push origin main
