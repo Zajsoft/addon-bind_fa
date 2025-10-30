@@ -12,8 +12,8 @@ arch:
   - i386
 init: false
 ports:
-  53/udp: 53
-  53/tcp: 53
+  53/udp: 5353
+  53/tcp: 5353
 map:
   - addon_config:rw
 image: ghcr.io/cmsj/{arch}-addon-bind
